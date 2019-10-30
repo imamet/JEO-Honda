@@ -1,0 +1,27 @@
+/*=================================================================
+    Company      : Digital Advertising Division - Tribunnews
+    Document     : CSS
+    Author       : Imam slamet
+    Project Name : Microsite Honda | Kompas.com
+    Year		 : 2019
+=================================================================*/
+
+// base sass, mixin + variable
+@import 'base';
+
+// global
+@import 'reset';
+@import 'grid';
+@import 'fontface';
+@import 'utilities';
+@import 'preloader';
+
+// main
+@import 'main';
+@import 'animation';
+
+// header
+@import 'header';
+
+// footer
+@import 'footer';

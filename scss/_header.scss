@@ -1,0 +1,80 @@
+.header{
+    background: #372a23;
+    color: white;
+    height: 60px;
+    padding: 10px 50px;
+    width: 100%;
+    // position: fixed;
+    z-index: 9999;
+    @include max-responsive($sm) {
+        height: 50px;
+     }
+    &__left{
+        position: absolute;
+        left: 50px;
+        top: 15px;
+        float: left;
+        @include max-responsive($sm) {
+            left: 10px
+         }
+       
+    }
+    &__right{
+        position: absolute;
+        right: 50px;
+        top: 10px;
+        @include max-responsive($sm) {
+            display: none
+         }
+    }
+    &__link{
+        img{
+            @include max-responsive($sm) {
+                width: 40%;
+             }
+        }
+    }
+    &__chanel{
+        img{
+            @include max-responsive($sm) {
+                width: 65%;
+             }
+        }
+        @include max-responsive($sm) {
+            margin-left: 8px;
+            padding-left: 10px;
+         }
+        display: inline-block;
+        margin-left: 20px;
+        padding-left: 30px;
+        border-left: 1px solid white;
+        font-weight: 700;
+    }
+}
+
+.share{
+    ul li{
+        float: left;
+       
+    }
+    &--right{
+        display: inline-block;
+        right: 0;
+        margin-top: -8px;
+        }
+    &__item{
+        // position: absolute;
+        margin-top: 15px;
+        right: 10px;
+        padding-right: 10px;
+    }
+    
+}
+
+.fixed-position {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        top: 0;
+}
+

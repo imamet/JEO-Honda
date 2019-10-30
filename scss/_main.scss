@@ -1,0 +1,228 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS Main CSS Documentation:
+----------------------------------------------------------------
+1.0 Page
+2.0 Cover
+3.0 Custom
+--------------------------------------------------------------*/
+.main{
+    padding: 1px;
+    p{
+        font-size: 16px;
+        line-height: 1.9em;
+        padding: 10px;
+        margin: 0;
+        font-family: $font_5;
+        line-height: 1.6em;
+    }
+    &__bg1{
+        position: absolute;
+        height: auto;
+        right: 0;
+        width: 22%;
+        @include max-responsive($sm) {
+                   display: none;
+                 }
+    }
+    &__bg2{
+        position: absolute;
+        height: auto;
+        left: 0;
+        width: 22%;
+        top: 94%;
+        @include max-responsive($xxlg) {
+            top: 133%;
+                 } 
+        @include max-responsive($xlg) {
+            top: 156%;
+                 }
+          
+        @include max-responsive($sm) {
+                   display: none;
+        }
+    }
+
+   
+    &__title{
+        color: #372a23;
+        font-size: 48px;
+        padding: 20px 0px 0px 0px;
+        font-family: $font_4;
+        @include max-responsive($sm) {
+            font-size: 30px;
+            padding: 20px 0px 20px 0px;
+         }
+        &--sub{
+            @include max-responsive($sm) {
+                margin-left: 10px;
+             }
+            background: #372a23;
+            color: #fff;
+            font-size: 22px;
+            padding: 8px;
+            margin: 10px 0px 10px 0px;
+            border-radius: 5px;
+            width: 206px;
+        }
+    }
+    &__maps{
+        
+        @include max-responsive($sm) {
+            display: none;
+         }
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &--klik{
+          position: absolute;
+          top: -50%;
+          width: 100px;
+          left: -120%;
+          @include max-responsive($sm) {
+            top: -65%;
+            width: 50px;
+            left: -120%;
+         }
+          img{
+            width: 100%;
+           
+          }
+        }
+        &--item1
+        {
+            position: absolute;
+            top: 18.7%;
+            left: 22.3%;
+            @include max-responsive($xlg) {
+              top: 17%;
+              left: 22%;
+           }
+        }
+        &--item2
+        {
+            position: absolute;
+            top: 30.4%;
+            left: 37.7%;
+            @include max-responsive($xlg) {
+              top: 28.5%;
+              left: 37.5%;
+           }
+        }
+        &--item3
+        {
+            position: absolute;
+            top: 34.5%;
+            left: 47.7%;
+            @include max-responsive($xlg) {
+              top: 32.5%;
+              left: 47.5%;
+           }
+        }
+        &--item4
+        {
+            position: absolute;
+            top: 29.8%;
+            left: 63.5%;
+            @include max-responsive($xlg) {
+              top: 28%;
+              left: 63%;
+           }
+        }
+        &--item5
+        {
+            position: absolute;
+            top: 48.8%;
+            left: 57.8%;
+            @include max-responsive($xlg) {
+              top: 46.5%;
+              left: 57.5%;
+           }
+        }
+        &--item6
+        {
+            position: absolute;
+            top: 55.3%;
+            left: 54.5%;
+            @include max-responsive($xlg) {
+              top: 52.5%;
+              left: 54%;
+           }
+        }
+
+    }
+    &__mapsmobile{
+        display: none;
+        @include max-responsive($sm) {
+            display: block;
+         }
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &--item1
+        {
+            width: 4%;
+            position: absolute;
+            top: 20%;
+            left: 8%;
+        }
+        &--item2
+        {
+            width: 4%;
+            position: absolute;
+            top: 31.5%;
+            left: 37%;
+        }
+        &--item3
+        {
+            width: 4%;
+            position: absolute;
+            top: 35.5%;
+            left: 56.5%;
+        }
+        &--item4
+        {
+            width: 4%;
+            position: absolute;
+            top: 30%;
+            left: 85.5%;
+        }
+        &--item5
+        {
+            width: 4%;
+            position: absolute;
+            top: 49%;
+            left: 75%;
+        }
+        &--item6
+        {
+            width: 4%;
+            position: absolute;
+            top: 55.5%;
+            left: 69%;
+        }
+    
+    }
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 370px;
+    background-color: #4E382B;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    left: -160px;
+    position: absolute;
+    z-index: 1;
+    line-height: 1.4em;
+    @include max-responsive($sm) {
+        display: none;
+     }
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+          
